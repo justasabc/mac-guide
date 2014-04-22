@@ -1,4 +1,4 @@
 mac-guide
 =========
 
-mac guides
+This tutorials contain many useful mac guides
