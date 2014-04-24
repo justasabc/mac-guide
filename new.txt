@@ -1,0 +1,7 @@
+2014/04/23
+可以参考一下 Unix设计哲学  和 The Architecture of Open Source Applications 这2本书.
+一个讲思想,一个讲例子.
+观点不一定都是对的,但非常有启发.
+link: 
+http://book.douban.com/subject/1467587/
+http://aosabook.org/en/index.html

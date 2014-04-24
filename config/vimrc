@@ -1,7 +1,31 @@
 execute pathogen#infect()
+"autocmd vimenter * NERDTree
 
 syntax on
+set number
+"set nonumber
 set background=dark
 "colorscheme solarized
 
-"autocmd vimenter * NERDTree
+set ai 
+set et
+
+" js
+  au BufRead,BufNewFile *.js set et ts=2 sw=2
+
+"python
+  au BufNewFile,BufRead *.py set et ts=4 sw=4
+
+
+"set ts=4
+"set tabstop=4
+"set sw=4
+"set shiftwidth=4
+
+" use space instead of tab
+"set expandtab
+" set noexpandtab
+
+" auto indent
+" set ai
+"set autoindent
