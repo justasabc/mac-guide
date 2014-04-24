@@ -1,0 +1,14 @@
+# http://docs.appcelerator.com/titanium/3.0/#!/guide/Using_a_Module
+
+# download module
+
+cp xxx.zip ~/Library/Application Support/Titantium/modules/iphone/
+
+vim tiapp.xml
+
+<!-- $MODULE_VERSION should be the same as "version" in the module manifest and directory number -->
+<modules>
+<module version="$MODULE_VERSION">$MODULE_ID</module>
+<!-- For example, if we were adding the calc module: -->
+<module version="0.1">org.appcelerator.calc</module>
+</modules>
