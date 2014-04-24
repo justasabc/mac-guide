@@ -1,0 +1,16 @@
+#http://git.agutong.com:3007/help/ssh
+
+SSH Keys
+
+SSH key allows you to establish a secure connection between your computer and GitLab
+
+To generate a new SSH key just open your terminal and use code below.
+
+$ ssh-keygen -t rsa -C "kzl@agutong.com"
+# Creates a new ssh key using the provided email
+# Generating public/private rsa key pair...
+Next just use code below to dump your public key and add to GitLab SSH Keys
+
+$ cat ~/.ssh/id_rsa.pub
+# ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6eNtGpNGwstc....
+
