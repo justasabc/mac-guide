@@ -1,0 +1,54 @@
+# http://git.agutong.com:3007/Agutong/dev-guide/wikis/rails-dev-setup-guide
+# https://github.com/justasabc/guides/blob/master/ruby/ruby.ini
+# ruby on Mac
+
+bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )
+# this script will create a ~/.profile file
+
+vim ~/.bash_profile
+source ~/.profile
+
+source ~/.bash_profile
+
+rvm -v
+rvm requirements
+
+
+#========================================
+# use rvm to install ruby
+#========================================
+rvm list known
+# MRI Rubies
+#[ruby-]1.8.6[-p420]
+#[ruby-]1.8.7[-p374]
+#[ruby-]1.9.1[-p431]
+#[ruby-]1.9.2[-p320]
+#[ruby-]1.9.3[-p484]
+#[ruby-]2.0.0-p195
+#[ruby-]2.0.0[-p353]
+#[ruby-]2.1.0-preview2
+#[ruby-]2.1.0-head
+
+rvm install 1.9.2
+
+rvm use 1.9.2 --default
+rvm list
+ruby -v
+#ruby 1.9.2p320 (2012-04-20 revision 35421) [x86_64-linux]
+
+#rvm remove 1.9.2
+#========================================
+# use gem to install package
+#========================================
+gem sources --remove https://rubygems.org/
+gem sources --remove http://rubygems.org/
+gem sources -a http://ruby.taobao.org/
+gem sources -l
+#*** CURRENT SOURCES ***
+#http://ruby.taobao.org    
+
+gem install jekyll
+jekyll -v
+#jekyll 1.3.0
+
+gem install rails
